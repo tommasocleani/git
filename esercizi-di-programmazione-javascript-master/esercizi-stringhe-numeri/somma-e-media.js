@@ -8,18 +8,25 @@
   
   http://www.imparareaprogrammare.it
 */
-var a = document.getElementById("a").value;
-var b = document.getElementById("b").value;
-var c = document.getElementById("c").value;
-var d = document.getElementById("d").value;
-var e = document.getElementById("e").value;
+
 function somma()
   {
-    var somma = a + b + c + d + e;
-    document.getElementById("sommaOut").innerHTML = parseInt(somma);
+    var a = parseInt(document.getElementById("a").value) ;
+  var b = parseInt(document.getElementById("b").value) ;
+  var c = parseInt(document.getElementById("c").value) ;
+  var d = parseInt(document.getElementById("d").value) ;
+  var e = parseInt(document.getElementById("e").value) ;
+  var somma;
+    somma = a+b+c+d+e;
+    document.getElementById("sommaOut").innerHTML = somma;
   }
   function media()
   {
+    var a = parseInt(document.getElementById("a").value) ;
+    var b = parseInt(document.getElementById("b").value) ;
+    var c = parseInt(document.getElementById("c").value) ;
+    var d = parseInt(document.getElementById("d").value) ;
+    var e = parseInt(document.getElementById("e").value) ;
     var media = (a + b + c + d + e)/5;
     document.getElementById("mediaOut").innerHTML = media;
   }
