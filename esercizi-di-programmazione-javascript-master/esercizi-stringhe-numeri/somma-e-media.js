@@ -8,10 +8,18 @@
   
   http://www.imparareaprogrammare.it
 */
-var a = 1;
-var b = 2;
-var c = 3;
-var d = 4;
-var e = 5;
-var somma = a + b + c + d + e;
-var media = (a + b + c + d + e)/5;
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var c = document.getElementById("c").value;
+var d = document.getElementById("d").value;
+var e = document.getElementById("e").value;
+function somma()
+  {
+    var somma = a + b + c + d + e;
+    document.getElementById("sommaOut").innerHTML = parseInt(somma);
+  }
+  function media()
+  {
+    var media = (a + b + c + d + e)/5;
+    document.getElementById("mediaOut").innerHTML = media;
+  }
