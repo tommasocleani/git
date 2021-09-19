@@ -22,17 +22,6 @@ function calcolo()
     minuti = minuti - ore*60;
   } 
   var secrim = secondi - (ore*3600 + minuti*60);
-  if (ore > 0)
-  {
-    var out = ore + " ore, " + minuti + " minuti e " + secrim + " secondi.";
-  }
-  else if (minuti > 0)
-  {
-    var out = minuti + " minuti e " + secrim + " secondi.";
-  }
-  else
-  {
-    var out = secrim + " secondi.";
-  }
+  var out = ore + " ore, " + minuti + " minuti e " + secrim + " secondi.";
   document.getElementById("risultato").innerHTML=out;
 }
