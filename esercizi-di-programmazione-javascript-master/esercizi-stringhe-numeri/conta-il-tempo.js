@@ -12,3 +12,23 @@
 
   http://www.imparareaprogrammare.it
 */
+function calcolo()
+{
+  var secondi = parseInt(document.getElementById("secondi").value);
+  var ore = Math.floor(secondi / 3600);
+  var minuti = Math.floor(secondi / 60);
+  var secrim = secondi - (ore*3600 + minuti*60);
+  if (ore > 0)
+  {
+    var out = ore + " ore, " + minuti + " minuti e " + secrim + " secondi.";
+  }
+  else if (minuti > 0)
+  {
+    var out = minuti + " minuti e " + secrim + " secondi.";
+  }
+  else
+  {
+    var out = secrim + " secondi.";
+  }
+  document.getElementById("risultato").innerHTML=out;
+}
