@@ -11,3 +11,10 @@
 
   http://www.imparareaprogrammare.it
 */
+function sottrazione
+{
+  var anno = parseInt(document.getElementById("anno").value);
+  var oggi = 2021;
+  sott = oggi - anno;
+  cariatide = 100 - sott;
+}
