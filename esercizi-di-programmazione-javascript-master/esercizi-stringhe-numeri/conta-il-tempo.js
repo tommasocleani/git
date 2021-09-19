@@ -17,6 +17,10 @@ function calcolo()
   var secondi = parseInt(document.getElementById("secondi").value);
   var ore = Math.floor(secondi / 3600);
   var minuti = Math.floor(secondi / 60);
+  if (minuti >= 60)
+  {
+    minuti = minuti - ore*60;
+  } 
   var secrim = secondi - (ore*3600 + minuti*60);
   if (ore > 0)
   {
