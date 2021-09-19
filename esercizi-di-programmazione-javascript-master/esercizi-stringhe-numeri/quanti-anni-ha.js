@@ -11,7 +11,7 @@
 
   http://www.imparareaprogrammare.it
 */
-function sottrazione
+function sottrazione()
 {
   var anno = parseInt(document.getElementById("anno").value);
   var oggi = 2021;

@@ -8,25 +8,22 @@
   
   http://www.imparareaprogrammare.it
 */
+var a;
+a=1;
+var b = document.getElementById("b").value;
+var c = document.getElementById("c").value;
+var d = document.getElementById("d").value;
+var e = document.getElementById("e").value;
+var risultato = 0;
 
 function somma()
   {
-    var a = parseInt(document.getElementById("a").value) ;
-  var b = parseInt(document.getElementById("b").value) ;
-  var c = parseInt(document.getElementById("c").value) ;
-  var d = parseInt(document.getElementById("d").value) ;
-  var e = parseInt(document.getElementById("e").value) ;
-  var somma;
-    somma = a+b+c+d+e;
-    document.getElementById("sommaOut").innerHTML = somma;
+    alert(isNaN(a));
+    risultato = a+b+c+d+e;
+    document.getElementById("sommaOut").innerHTML = risultato;
   }
   function media()
   {
-    var a = parseInt(document.getElementById("a").value) ;
-    var b = parseInt(document.getElementById("b").value) ;
-    var c = parseInt(document.getElementById("c").value) ;
-    var d = parseInt(document.getElementById("d").value) ;
-    var e = parseInt(document.getElementById("e").value) ;
-    var media = (a + b + c + d + e)/5;
-    document.getElementById("mediaOut").innerHTML = media;
+    risultato = (a + b + c + d + e)/5;
+    document.getElementById("mediaOut").innerHTML = risultato;
   }
