@@ -17,7 +17,9 @@ function sottrazione()
   var oggi = new Date().getFullYear();
   var sott = oggi - anno;
   document.getElementById("sott").innerHTML=sott;
+  window.value = vecchio = 100 - sott;
 }
-function cariatide() {
-  var cariatide = 100 - sott;
+function cariatide() 
+{
+  alert(window.value);
 }
