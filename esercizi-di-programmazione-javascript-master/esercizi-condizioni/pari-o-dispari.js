@@ -15,3 +15,11 @@
 
   http://www.imparareaprogrammare.it
 */
+function calcolo()
+{
+  var num = parseInt(document.getElementById("num").value);
+  var out;
+  if (num % 2 == 0) out = 0;
+  else out = 1;
+  document.getElementById("risultato").innerHTML="Output =" + out;
+}
