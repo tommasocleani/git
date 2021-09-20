@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+function calcolo()
+  {
+    var gatti = parseInt(document.getElementById("gatti").value);
+    var gatti_in = parseInt(document.getElementById("file").value);
+    var file = Math.ceil(gatti / gatti_in);
+    var gatti_man = (num_file * gatti_in) - gatti;
+  }
