@@ -20,7 +20,8 @@
 function calcolo()
   {
     var gatti = parseInt(document.getElementById("gatti").value);
-    var gatti_in = parseInt(document.getElementById("file").value);
-    var file = Math.ceil(gatti / gatti_in);
-    var gatti_man = (num_file * gatti_in) - gatti;
+    var gattiIn = parseInt(document.getElementById("file").value);
+    var file = Math.ceil(gatti / gattiIn);
+    var gattiMan = (file * gattiIn) - gatti;
+    document.getElementById("risultato").innerHTML="numero delle file = " + file + ", gatti mancanti = " + gattiMan;
   }
